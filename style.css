@@ -90,31 +90,29 @@ nav.scrolled .nav-links a:hover { color: var(--text); }
   position: relative; z-index: 1;
 }
 .hero-cta {
-  display: flex; gap: 16px; justify-content: center; align-items: center;
-  margin-bottom: 40px; flex-wrap: wrap;
+  display: flex; justify-content: center;
+  margin-bottom: 20px;
   position: relative; z-index: 1;
 }
 .btn-appstore {
   background: #fff; color: var(--text);
-  padding: 14px 28px; border-radius: 16px;
-  display: flex; align-items: center; gap: 12px;
+  padding: 16px 32px; border-radius: 18px;
+  display: flex; align-items: center; gap: 13px;
   text-decoration: none;
   box-shadow: 0 8px 32px rgba(0,0,0,0.4);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .btn-appstore:hover { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(0,0,0,0.5); }
-.btn-appstore-icon { width: 22px; height: 22px; flex-shrink: 0; fill: var(--text); }
+.btn-appstore-icon { width: 24px; height: 24px; flex-shrink: 0; fill: var(--text); }
 .btn-appstore-text small { display: block; font-size: 11px; font-weight: 400; color: var(--text-secondary); }
-.btn-appstore-text strong { display: block; font-size: 17px; font-weight: 700; letter-spacing: -0.3px; color: var(--text); }
-.qr-box {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.12);
-  padding: 14px; border-radius: 16px;
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  backdrop-filter: blur(10px);
+.btn-appstore-text strong { display: block; font-size: 18px; font-weight: 700; letter-spacing: -0.3px; color: var(--text); }
+
+.hero-qr {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  margin-bottom: 28px; position: relative; z-index: 1;
 }
-#qr-canvas { border-radius: 6px; }
-.qr-label { font-size: 11px; color: rgba(255,255,255,0.4); font-weight: 500; }
+#qr-canvas { border-radius: 8px; opacity: 0.85; }
+.qr-label { font-size: 11px; color: rgba(255,255,255,0.3); font-weight: 500; }
 
 .hero-trust {
   display: flex; justify-content: center; align-items: center;
