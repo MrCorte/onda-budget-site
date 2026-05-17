@@ -42,6 +42,11 @@ nav.scrolled .nav-links a:hover { color: var(--text); }
 .nav-links { display: flex; gap: 28px; }
 .nav-links a { font-size: 15px; color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover { color: #fff; }
+.nav-right { display: flex; align-items: center; gap: 12px; }
+.lang-switch { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.5); text-decoration: none; letter-spacing: 0.2px; transition: color 0.2s; padding: 4px 2px; }
+.lang-switch:hover { color: rgba(255,255,255,0.9); }
+nav.scrolled .lang-switch { color: var(--text-secondary); }
+nav.scrolled .lang-switch:hover { color: var(--text); }
 .nav-cta { background: var(--blue); color: #fff; padding: 9px 20px; border-radius: 22px; font-size: 14px; font-weight: 600; text-decoration: none; transition: opacity 0.2s; }
 .nav-cta:hover { opacity: 0.85; }
 
