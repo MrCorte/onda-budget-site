@@ -31,36 +31,79 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
+  <!-- animated background glows -->
   <div class="hero-glow hero-glow--blue"></div>
   <div class="hero-glow hero-glow--purple"></div>
+  <div class="hero-glow hero-glow--teal"></div>
+  <!-- dot grid overlay -->
+  <div class="hero-dots"></div>
 
-  <div class="hero-badge fade-up">🌊 Disponibile su App Store</div>
-  <h1 class="fade-up" style="transition-delay:0.08s">Finalmente sai<br>dove vanno <span>i tuoi soldi.</span></h1>
-  <p class="hero-sub fade-up" style="transition-delay:0.18s">Aggiungi una spesa in pochi secondi. Budget per categoria. Statistiche chiare ogni mese — senza sorprese, senza complessità.</p>
+  <div class="hero-content">
+    <div class="hero-badge fade-blur">🌊 Disponibile su App Store</div>
 
-  <div class="hero-cta fade-up" style="transition-delay:0.3s">
-    <a href="https://apps.apple.com/app/id6769332453" class="btn-appstore" target="_blank" rel="noopener">
-      <svg class="btn-appstore-icon" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      <div class="btn-appstore-text">
-        <small>Scarica su</small>
-        <strong>App Store</strong>
-      </div>
-    </a>
+    <h1 class="fade-blur" style="transition-delay:0.1s">
+      Finalmente sai<br>dove vanno <span class="gradient-text">i tuoi soldi.</span>
+    </h1>
+
+    <p class="hero-sub fade-blur" style="transition-delay:0.22s">
+      Aggiungi una spesa in pochi secondi. Budget per categoria.<br>Statistiche chiare ogni mese — senza sorprese, senza complessità.
+    </p>
+
+    <div class="hero-cta fade-blur" style="transition-delay:0.34s">
+      <a href="https://apps.apple.com/app/id6769332453" class="btn-appstore" target="_blank" rel="noopener">
+        <svg class="btn-appstore-icon" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <div class="btn-appstore-text">
+          <small>Scarica su</small>
+          <strong>App Store</strong>
+        </div>
+      </a>
+    </div>
+
+    <div class="hero-qr fade-blur" style="transition-delay:0.44s">
+      <canvas id="qr-canvas"></canvas>
+      <span class="qr-label">Scansiona per scaricare</span>
+    </div>
+
+    <div class="hero-trust fade-blur" style="transition-delay:0.54s">
+      <span>Gratis</span>
+      <span class="trust-sep">·</span>
+      <span>Solo iPhone</span>
+      <span class="trust-sep">·</span>
+      <span>Nessun account</span>
+      <span class="trust-sep">·</span>
+      <span>Privacy totale</span>
+    </div>
   </div>
 
-  <div class="hero-qr fade-up" style="transition-delay:0.38s">
-    <canvas id="qr-canvas"></canvas>
-    <span class="qr-label">Scansiona per scaricare</span>
-  </div>
-
-  <div class="hero-trust fade-up" style="transition-delay:0.44s">
-    <span>Gratis</span>
-    <span class="trust-sep">·</span>
-    <span>Solo iPhone</span>
-    <span class="trust-sep">·</span>
-    <span>Nessun account</span>
-    <span class="trust-sep">·</span>
-    <span>Privacy totale</span>
+  <!-- scrolling ticker of real expenses -->
+  <div class="hero-ticker">
+    <div class="ticker-track">
+      <span class="tick-item">🏠 Affitto <strong>€850,00</strong></span>
+      <span class="tick-item">☕ Bar <strong>€3,50</strong></span>
+      <span class="tick-item">🛒 Esselunga <strong>€67,20</strong></span>
+      <span class="tick-item">🎵 Spotify <strong>€10,99</strong></span>
+      <span class="tick-item">🚇 Metro <strong>€2,00</strong></span>
+      <span class="tick-item">🍕 Da Mario <strong>€24,00</strong></span>
+      <span class="tick-item">⚡ Enel <strong>€89,00</strong></span>
+      <span class="tick-item">💊 Farmacia <strong>€18,70</strong></span>
+      <span class="tick-item">🏋️ Palestra <strong>€49,00</strong></span>
+      <span class="tick-item">🍣 Sushi <strong>€38,50</strong></span>
+      <span class="tick-item">📺 Netflix <strong>€15,99</strong></span>
+      <span class="tick-item">⛽ Q8 <strong>€45,00</strong></span>
+      <!-- duplicate for seamless loop -->
+      <span class="tick-item">🏠 Affitto <strong>€850,00</strong></span>
+      <span class="tick-item">☕ Bar <strong>€3,50</strong></span>
+      <span class="tick-item">🛒 Esselunga <strong>€67,20</strong></span>
+      <span class="tick-item">🎵 Spotify <strong>€10,99</strong></span>
+      <span class="tick-item">🚇 Metro <strong>€2,00</strong></span>
+      <span class="tick-item">🍕 Da Mario <strong>€24,00</strong></span>
+      <span class="tick-item">⚡ Enel <strong>€89,00</strong></span>
+      <span class="tick-item">💊 Farmacia <strong>€18,70</strong></span>
+      <span class="tick-item">🏋️ Palestra <strong>€49,00</strong></span>
+      <span class="tick-item">🍣 Sushi <strong>€38,50</strong></span>
+      <span class="tick-item">📺 Netflix <strong>€15,99</strong></span>
+      <span class="tick-item">⛽ Q8 <strong>€45,00</strong></span>
+    </div>
   </div>
 </section>
 

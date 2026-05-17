@@ -26,12 +26,11 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.15 });
-
 fadeEls.forEach(el => observer.observe(el));
 
-// Trigger hero fade-ups immediately (already in viewport on load)
+// Trigger hero blur-reveals on load (staggered)
 window.addEventListener('load', () => {
-  document.querySelectorAll('.hero .fade-up').forEach((el, i) => {
-    setTimeout(() => el.classList.add('visible'), 100 + i * 130);
+  document.querySelectorAll('.fade-blur').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 80 + i * 140);
   });
 });
