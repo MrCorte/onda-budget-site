@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onda Budget — Le tue finanze, finalmente chiare.</title>
+  <meta name="description" content="Traccia spese, gestisci budget e scopri dove finiscono i tuoi soldi. App iOS per iPhone.">
+  <meta property="og:title" content="Onda Budget">
+  <meta property="og:description" content="Le tue finanze, finalmente chiare.">
+  <meta property="og:image" content="assets/app-icon.png">
+  <meta name="theme-color" content="#007aff">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-icon"></div>
+    <span class="nav-name">Onda Budget</span>
+  </a>
+  <div class="nav-links">
+    <a href="#features">Funzionalità</a>
+    <a href="#about">About</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+  <a href="https://apps.apple.com/app/id6769332453" class="nav-cta" target="_blank" rel="noopener">Download</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-badge">🌊 Disponibile su App Store</div>
+  <h1 class="fade-up">Le tue finanze,<br>finalmente <span>chiare.</span></h1>
+  <p class="hero-sub fade-up" style="transition-delay:0.13s">Traccia spese, gestisci budget e scopri dove finiscono i tuoi soldi — ogni giorno, in pochi tocchi.</p>
+
+  <div class="hero-cta fade-up" style="transition-delay:0.26s">
+    <a href="https://apps.apple.com/app/id6769332453" class="btn-appstore" target="_blank" rel="noopener">
+      <span class="btn-appstore-icon"></span>
+      <div class="btn-appstore-text">
+        <small>Scarica su</small>
+        <strong>App Store</strong>
+      </div>
+    </a>
+    <div class="qr-box">
+      <canvas id="qr-canvas"></canvas>
+      <span class="qr-label">Scansiona per scaricare</span>
+    </div>
+  </div>
+
+  <!-- iPhone mockups -->
+  <div class="phones-wrap fade-up" style="transition-delay:0.4s">
+    <div class="phone-side">
+      <div class="phone-side-screen">
+        <div class="stat-title">Statistiche</div>
+        <div class="donut-wrap"><div class="donut"></div></div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#007aff"></div>
+          <span class="legend-name">Casa</span>
+          <span class="legend-val">€320</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#5856d6"></div>
+          <span class="legend-name">Trasporti</span>
+          <span class="legend-val">€180</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#34c759"></div>
+          <span class="legend-name">Spesa</span>
+          <span class="legend-val">€240</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#ff9500"></div>
+          <span class="legend-name">Ristoranti</span>
+          <span class="legend-val">€140</span>
+        </div>
+      </div>
+    </div>
+    <div class="phone-main">
+      <div class="phone-screen">
+        <div class="phone-header">
+          <div class="phone-header-label">Maggio 2026</div>
+          <div class="phone-header-amount">€ 1,240</div>
+          <div class="phone-header-sub">Budget rimanente: €760</div>
+        </div>
+        <div class="chart-bars">
+          <div class="chart-bar" style="background:#007aff;height:55%"></div>
+          <div class="chart-bar" style="background:#eef4ff;height:38%"></div>
+          <div class="chart-bar" style="background:#007aff;height:75%"></div>
+          <div class="chart-bar" style="background:#eef4ff;height:50%"></div>
+          <div class="chart-bar" style="background:#007aff;height:68%"></div>
+          <div class="chart-bar" style="background:#eef4ff;height:32%"></div>
+          <div class="chart-bar" style="background:#5856d6;height:88%"></div>
+        </div>
+        <div class="expense-row">
+          <div class="expense-dot" style="background:#ff9500"></div>
+          <div class="expense-line" style="width:65%"></div>
+          <span class="expense-val">€42</span>
+        </div>
+        <div class="expense-row">
+          <div class="expense-dot" style="background:#34c759"></div>
+          <div class="expense-line" style="width:40%"></div>
+          <span class="expense-val">€18</span>
+        </div>
+        <div class="expense-row">
+          <div class="expense-dot" style="background:#5856d6"></div>
+          <div class="expense-line" style="width:78%"></div>
+          <span class="expense-val">€65</span>
+        </div>
+        <div class="expense-row">
+          <div class="expense-dot" style="background:#ff2d55"></div>
+          <div class="expense-line" style="width:28%"></div>
+          <span class="expense-val">€12</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE -->
+<svg class="wave" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+</svg>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="section-eyebrow">Funzionalità</div>
+  <h2 class="section-title">Tutto quello che ti serve,<br>niente di più.</h2>
+  <div class="features-grid">
+    <div class="feat-card">
+      <span class="feat-icon">📊</span>
+      <div class="feat-title">Budget per categoria</div>
+      <div class="feat-desc">Soglie di avviso a 80% e 100%. Messaggi chiari, senza giudizio.</div>
+    </div>
+    <div class="feat-card">
+      <span class="feat-icon">📈</span>
+      <div class="feat-title">Statistiche e grafici</div>
+      <div class="feat-desc">Andamento giornaliero, confronto mensile, distribuzione spese.</div>
+    </div>
+    <div class="feat-card">
+      <span class="feat-icon">🔄</span>
+      <div class="feat-title">Spese ricorrenti</div>
+      <div class="feat-desc">Abbonamenti e spese fisse sempre visibili. Alert prima del rinnovo.</div>
+    </div>
+    <div class="feat-card">
+      <span class="feat-icon">🔒</span>
+      <div class="feat-title">Privacy first</div>
+      <div class="feat-desc">Dati salvati solo sul tuo iPhone. Nessun account richiesto. Nessun tracking.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE TO ABOUT -->
+<svg class="wave-to-blue" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M0,0 C480,80 960,0 1440,60 L1440,80 L0,80 Z" fill="url(#grad1)"/>
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#007aff"/>
+      <stop offset="100%" style="stop-color:#5856d6"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2 class="fade-up">Fatto con cura,<br>per uso quotidiano.</h2>
+  <p class="fade-up" style="transition-delay:0.1s">Onda Budget è un'app iOS indipendente. Nessuna complessità, nessun abbonamento nascosto, nessun tracking. Solo quello che ti serve ogni giorno.</p>
+  <a href="https://apps.apple.com/app/id6769332453" class="about-cta fade-up" style="transition-delay:0.2s" target="_blank" rel="noopener">Scarica gratis su App Store →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 Andrea Cortesi</span>
+  <div class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:andreacorte9@gmail.com">Supporto</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
