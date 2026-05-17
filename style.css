@@ -41,7 +41,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 /* HERO */
 .hero {
   background: linear-gradient(180deg, #ffffff 0%, #eef4ff 70%, #f0f4ff 100%);
-  padding: 96px 48px 0;
+  padding: 96px 48px 100px;
   text-align: center;
   position: relative; overflow: hidden;
 }
@@ -160,55 +160,6 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .legend-name { font-size: 9px; color: var(--text-secondary); flex: 1; }
 .legend-val { font-size: 9px; font-weight: 700; color: var(--text); }
 
-/* HERO PHONE */
-.hero-phone-wrap { display: flex; justify-content: center; padding-bottom: 0; }
-.iphone-frame {
-  position: relative;
-  width: 280px;
-  background: #1a1a1a;
-  border-radius: 50px;
-  padding: 14px 10px 20px;
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,0.12),
-    0 0 0 2px #3a3a3a,
-    0 48px 100px rgba(0,0,0,0.36),
-    0 12px 32px rgba(0,122,255,0.14);
-  animation: float-main 4s ease-in-out infinite;
-}
-.iphone-notch {
-  position: absolute;
-  top: 14px; left: 50%; transform: translateX(-50%);
-  width: 90px; height: 26px;
-  background: #1a1a1a;
-  border-radius: 0 0 18px 18px;
-  z-index: 2;
-}
-.iphone-notch::before {
-  content: '';
-  position: absolute;
-  top: 8px; left: 50%; transform: translateX(-50%);
-  width: 10px; height: 10px;
-  background: #2a2a2a;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px rgba(255,255,255,0.06);
-}
-.iphone-screen {
-  border-radius: 38px;
-  overflow: hidden;
-  background: #000;
-  position: relative;
-}
-.iphone-screenshot {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.iphone-home-bar {
-  width: 80px; height: 4px;
-  background: rgba(255,255,255,0.3);
-  border-radius: 2px;
-  margin: 10px auto 0;
-}
 
 
 /* WAVE */
