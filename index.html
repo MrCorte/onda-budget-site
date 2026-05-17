@@ -11,7 +11,7 @@
   <meta name="theme-color" content="#007aff">
   <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="stylesheet" href="style.css">
-  <script>if(!navigator.language.toLowerCase().startsWith('it')&&!new URLSearchParams(location.search).has('lang'))window.location.replace('./en.html');</script>
+  <script>if(!navigator.language.toLowerCase().startsWith('it')&&sessionStorage.getItem('langOverride')!=='it')window.location.replace('./en.html');</script>
   <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
     <a href="privacy.html">Privacy</a>
   </div>
   <div class="nav-right">
-    <a href="en.html?lang=en" class="lang-switch" title="Switch to English">🇬🇧 EN</a>
+    <a href="en.html" class="lang-switch" title="Switch to English" onclick="sessionStorage.setItem('langOverride','en')">🇬🇧 EN</a>
     <a href="https://apps.apple.com/app/id6769332453" class="nav-cta" target="_blank" rel="noopener">Download</a>
   </div>
 </nav>
