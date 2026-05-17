@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: https://mrcorte.github.io/onda-budget-site/sitemap.xml
+Sitemap: https://ondabudget.com/sitemap.xml
