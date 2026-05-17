@@ -172,7 +172,8 @@ nav.scrolled .nav-links a:hover { color: var(--text); }
 .trust-sep { opacity: 0.3; }
 
 /* ── TICKER */
-.hero-ticker {
+.hero-ticker { display: none; }
+.hero-ticker-hidden {
   position: relative; z-index: 2;
   height: 48px;
   overflow: hidden;
