@@ -171,6 +171,16 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .section-eyebrow { font-size: 13px; color: var(--blue); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-align: center; margin-bottom: 14px; }
 .section-title { font-size: clamp(32px, 4vw, 48px); font-weight: 800; letter-spacing: -1.5px; text-align: center; margin-bottom: 60px; line-height: 1.1; }
 .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 800px; margin: 0 auto; }
+.features-bento { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 860px; margin: 0 auto; }
+.feat-card--hero {
+  grid-column: 1 / -1;
+  display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start;
+  background: linear-gradient(135deg, rgba(0,122,255,0.07) 0%, rgba(88,86,214,0.07) 100%);
+  border: 1px solid rgba(0,122,255,0.12);
+}
+.feat-card--hero .feat-icon { font-size: 44px; margin-bottom: 0; }
+.feat-card--hero .feat-title { font-size: 21px; }
+.feat-card--hero .feat-desc { font-size: 16px; line-height: 1.65; }
 .feat-card {
   background: var(--bg); border-radius: 24px; padding: 32px 28px;
   border: 1px solid rgba(0,0,0,0.04);
@@ -251,6 +261,9 @@ footer {
   .phone-side { display: none; }
   .features { padding: 72px 24px; }
   .features-grid { grid-template-columns: 1fr; }
+  .features-bento { grid-template-columns: 1fr; }
+  .feat-card--hero { grid-template-columns: 1fr; }
+  .feat-card--hero .feat-icon { margin-bottom: 8px; }
   .features-grid { grid-template-columns: 1fr; }
   .about { padding: 72px 24px; }
   footer { flex-direction: column; gap: 16px; text-align: center; }
