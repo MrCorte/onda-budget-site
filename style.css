@@ -182,16 +182,18 @@ nav.scrolled .nav-links a:hover { color: var(--text); }
   mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 .ticker-track {
-  display: flex; gap: 48px; white-space: nowrap;
-  animation: ticker-scroll 36s linear infinite;
+  display: flex; flex-wrap: nowrap; align-items: center;
+  gap: 20px; white-space: nowrap;
+  animation: ticker-scroll 40s linear infinite;
   width: max-content;
 }
 .tick-item {
-  font-size: 13px; color: rgba(255,255,255,0.35);
-  display: inline-flex; align-items: center; gap: 7px;
-  font-weight: 500;
+  font-size: 13px; color: rgba(255,255,255,0.3);
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 500; flex-shrink: 0;
 }
-.tick-item strong { color: rgba(255,255,255,0.65); font-weight: 700; }
+.tick-item strong { color: rgba(255,255,255,0.6); font-weight: 700; }
+.tick-sep { color: rgba(255,255,255,0.12); font-size: 16px; flex-shrink: 0; }
 
 /* ─── WAVE ─────────────────────────────── */
 .wave--dark { display: block; width: 100%; overflow: hidden; line-height: 0; background: var(--hero-bg); }
